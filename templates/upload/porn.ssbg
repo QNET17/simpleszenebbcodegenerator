@@ -1,0 +1,28 @@
+[CENTER]
+[B]##TITLE##[/B]
+##IF_TITLE2##
+##STATUS##
+
+[spoiler]
+[IMG]##COVER##[/IMG]
+[/SPOILER]
+
+##COLOR1##[B]Größe:[/B]##COLOR## ##COLOR2##~##SIZE####COLOR##
+##COLOR1##[B]Archive:[/B]##COLOR## ##COLOR2####IF_ARCHIVE####COLOR## [B]|[/B] ##COLOR1##[B]Format:[/B]##COLOR## ##COLOR2####FORMAT####COLOR##
+##COLOR1##[B]Hashcode:[/B]##COLOR## ##COLOR2####HASHCODE####COLOR## [B]|[/B] ##COLOR1##[B]Passwort:[/B]##COLOR## ##COLOR2####PASSWORD####COLOR##
+
+[code]
+##DESCRIPTION##
+[/code]
+
+##IF_Z_INFO##
+
+[B]Download[/B]
+##STATUS##
+[spoiler]
+##DLINK##
+##CNLINK##
+[/spoiler]
+
+Created by SSBG Beta *PORN*
+[/CENTER]

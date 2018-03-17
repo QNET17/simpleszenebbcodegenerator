@@ -1,0 +1,95 @@
+<script type="text/javascript">
+$(function() {
+
+    $(".errorsContainer").hide();
+
+    $("#generator").validate({
+
+        errorClass: "state-error",
+        validClass: "state-success",
+        errorElement: "li",
+
+        rules: {
+            title: {
+                required: true
+            },
+            remotecover: {
+                require_from_group: [1, ".cover-group"]
+            },
+            uploadcover: {
+                require_from_group: [1, ".cover-group"]
+            },
+            size: {
+                required: true
+            },
+            units: {
+                required: true
+            },
+            format: {
+                required: true
+            },
+            ochlinks: {
+                required: true
+            },
+            upl_tpl: {
+                extension: "txt|ssbg"
+            },
+            uploadcover: {
+                extension: "jpg|jpeg|gif|bmp|png"
+            },
+
+
+
+        },
+        messages: {
+            title: {
+                required: '{lang_error_title}'
+            },
+            remotecover: {
+                require_from_group: '{lang_error_cover}'
+            },
+            uploadcover: {
+                require_from_group: '{lang_error_cover}'
+            },
+            size: {
+                required: '{lang_error_size}'
+            },
+            units: {
+                required: '{lang_error_units}'
+            },
+            format: {
+                required: '{lang_error_format}'
+            },
+            ochlinks: {
+                required: '{lang_error_ochlinks}'
+            },
+            upl_tpl: {
+                extension: '{lang_error_fileformat}'
+            },
+            uploadcover: {
+                extension: '{lang_error_fileformat}'
+            },
+
+        },
+        invalidHandler: function(form, validator) {
+            $(".errorsContainer").show();
+        },
+        highlight: function(element, errorClass, validClass) {
+            $(element).closest('.field').addClass(errorClass).removeClass(validClass);
+            if (this.numberOfInvalids() > 0) {
+                $(".errorsContainer").show();
+            }
+        },
+        unhighlight: function(element, errorClass, validClass) {
+            $(element).closest('.field').removeClass(errorClass).addClass(validClass);
+            if (this.numberOfInvalids() == 0) {
+                $(".errorsContainer").hide();
+            }
+        },
+        errorPlacement: function(error, element) {
+            error.appendTo("#smartErrors");
+        }
+    });
+
+});
+</script>

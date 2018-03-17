@@ -1,0 +1,918 @@
+{header}
+<form method="post" action="/" id="quote">
+    <div class="form-body theme-{color_sheme}">
+        <div class="spacer-b20">
+            <a href="#uploadtemplate" class="btn btn-default">{lang_upload_template_title}</a>
+            <a href="#general" class="btn btn-default">{lang_general}</a>
+        </div>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            {lang_upload_template_info}
+        </div>
+        <br />
+        <div class="panel-group" id="accordion">
+            <div class="faqHeader" id="uploadtemplate">{lang_upload_template_title}</div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion" href="#collapse-gen-simple"><i class="fa fa-hashtag"></i> {lang_faq_title_simple}</a>
+                </h4>
+                </div>
+                <div id="collapse-gen-simple" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                        <table width="100%" border="0" class="table">
+                            <thead>
+                                <tr>
+                                    <th>{lang_placeholder}</th>
+                                    <th>{lang_description}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="info">
+                                    <td>
+                                        <strong>##COLOR1##<br />##COLOR2##<br />##COLOR##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_color}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##STATUS##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_status}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##DLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_dlink}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##CNLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cnlink}
+                                    </td>
+                                </tr>
+                                <tr class="warning">
+                                    <td colspan="2" align="right"><a href="#" onclick="return popitup('./templates/upload/simple.ssbg')"><strong>Beispiel-Template ansehen</strong></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-gen-game"><i class="fa fa-gamepad"></i> {lang_faq_title_game}</a>
+                </h4>
+                </div>
+                <div id="collapse-gen-game" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table width="100%" border="0" class="table">
+                            <thead>
+                                <tr>
+                                    <th>{lang_placeholder}</th>
+                                    <th>{lang_description}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="info">
+                                    <td>
+                                        <strong>##COLOR1##<br />##COLOR2##<br />##COLOR##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_color}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="26%">
+                                        <strong>##TITLE##</strong>
+                                    </td>
+                                    <td width="74%">
+                                        {lang_utemp_title}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##IF_TITLE2##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_title2}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##UPDATE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_update}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##UPDATE_MINI##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_update_mini}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##STATUS##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_status}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##COVER##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cover}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##IF_GENRE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_genre}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##IF_CRACK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_crack}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##SPRACHE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_language}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##ARCHIVE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_format}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##SIZE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_size_unit}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##HASHCODE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_hashcode}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##IF_DESCRIPTION##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_description_game}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##NFO##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_nfo}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##IF_Z_INFO##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_zinfo}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##DLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_dlink}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##CNLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cnlink}
+                                    </td>
+                                </tr>
+                                <tr class="warning">
+                                    <td colspan="2" align="right"><a href="#" onclick="return popitup('./templates/upload/games.ssbg')"><strong>Beispiel-Template ansehen</strong></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-gen-software"><i class="fa fa-file"></i> {lang_faq_title_software}</a>
+                </h4>
+                </div>
+                <div id="collapse-gen-software" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table width="100%" border="0" class="table">
+                            <thead>
+                                <tr>
+                                    <th>{lang_placeholder}</th>
+                                    <th>{lang_description}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="info">
+                                    <td>
+                                        <strong>##COLOR1##<br />##COLOR2##<br />##COLOR##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_color}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="26%">
+                                        <strong>##TITLE##</strong>
+                                    </td>
+                                    <td width="74%">
+                                        {lang_utemp_title}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##IF_TITLE2##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_title2}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##VERSION##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_version}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##STATUS##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_status}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##COVER##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cover}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##IF_BUILD##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_build}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##SPRACHE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_language}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##FORMAT##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_format}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##SIZE## ##UNIT##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_size_unit}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##HASHCODE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_hashcode}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##DESCRIPTION##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_description}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##DLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_dlink}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##CNLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cnlink}
+                                    </td>
+                                </tr>
+                                <tr class="warning">
+                                    <td colspan="2" align="right"><a href="#" onclick="return popitup('./templates/upload/software.ssbg')"><strong>Beispiel-Template ansehen</strong></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-gen-movie"><i class="fa fa-film"></i> {lang_faq_title_movie}</a>
+                </h4>
+                </div>
+                <div id="collapse-gen-movie" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table width="100%" border="0" class="table">
+                            <thead>
+                                <tr>
+                                    <th>{lang_placeholder}</th>
+                                    <th>{lang_description}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="info">
+                                    <td>
+                                        <strong>##COLOR1##<br />##COLOR2##<br />##COLOR##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_color}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="26%">
+                                        <strong>##TITLE##</strong>
+                                    </td>
+                                    <td width="74%">
+                                        {lang_utemp_title}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##IF_TITLE2##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_title2}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##LIFETIME##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_lifetime}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##STATUS##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_status}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##COVER##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cover}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##IF_GENRE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_genre}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##ASTREAM##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_astream}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##VSTREAM##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_vstream}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##VCODEC##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_vcodec}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##SPRACHE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_language}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##FORMAT##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_format}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##SIZE## ##UNIT##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_size_unit}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##HASHCODE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_hashcode}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##DESCRIPTION##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_description}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##NFO##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_nfo}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##MEDIAINFO##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_mediainfo}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##DLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_dlink}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##CNLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cnlink}
+                                    </td>
+                                </tr>
+                                <tr class="warning">
+                                    <td colspan="2" align="right"><a href="#" onclick="return popitup('./templates/upload/movies.ssbg')"><strong>Beispiel-Template ansehen</strong></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-gen-moviexrel"><i class="fa fa-file-video-o"></i> {lang_faq_title_movie_xrel}</a>
+                </h4>
+                </div>
+                <div id="collapse-gen-moviexrel" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table width="100%" border="0" class="table">
+                            <thead>
+                                <tr>
+                                    <th>{lang_placeholder}</th>
+                                    <th>{lang_description}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="info">
+                                    <td>
+                                        <strong>##COLOR1##<br />##COLOR2##<br />##COLOR##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_color}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="26%">
+                                        <strong>##TITLE##</strong>
+                                    </td>
+                                    <td width="74%">
+                                        {lang_utemp_title}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##IF_TITLE2##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_title2}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##LIFETIME##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_lifetime}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##STATUS##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_status}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##COVER##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cover}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##GENRE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_genre}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##ASTREAM##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_astream}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##VSTREAM##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_vstream}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##RELEASED##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_released}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##YEAR##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_year}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##SPRACHE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_language}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##FORMAT##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_format}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##SIZE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_size_unit}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##HASHCODE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_hashcode}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##DESCRIPTION##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_description}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##NFO##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_nfo}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##MEDIAINFO##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_mediainfo}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##DLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_dlink}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##CNLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cnlink}
+                                    </td>
+                                </tr>
+                                <tr class="warning">
+                                    <td colspan="2" align="right"><a href="#" onclick="return popitup('./templates/upload/moviesXrel.ssbg')"><strong>Beispiel-Template ansehen</strong></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-gen-moviexrel"><i class="fa fa-venus-mars"></i> {lang_faq_title_porn}</a>
+                </h4>
+                </div>
+                <div id="collapse-gen-moviexrel" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        <table width="100%" border="0" class="table">
+                            <thead>
+                                <tr>
+                                    <th>{lang_placeholder}</th>
+                                    <th>{lang_description}</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="info">
+                                    <td>
+                                        <strong>##COLOR1##<br />##COLOR2##<br />##COLOR##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_color}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td width="26%">
+                                        <strong>##TITLE##</strong>
+                                    </td>
+                                    <td width="74%">
+                                        {lang_utemp_title}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##IF_TITLE2##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_title2}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##STATUS##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_status}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##COVER##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cover}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##SIZE## ##UNIT##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_size_unit}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##IF_ARCHIVE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_if_archive}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##FORMAT##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_format}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##HASHCODE##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_hashcode}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##DESCRIPTION##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_description_porn}
+                                    </td>
+                                </tr>
+                                <tr class="active">
+                                    <td>
+                                        <strong>##DLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_dlink}
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <strong>##CNLINK##</strong>
+                                    </td>
+                                    <td>
+                                        {lang_utemp_cnlink}
+                                    </td>
+                                </tr>
+                                <tr class="warning">
+                                    <td colspan="2" align="right"><a href="#" onclick="return popitup('./templates/upload/porn.ssbg')"><strong>Beispiel-Template ansehen</strong></a></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="faqHeader" id="general">{lang_general}</div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-cookies">{lang_faq_title_cookie}</a>
+                </h4>
+                </div>
+                <div id="collapse-cookies" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        {lang_faq_cookie_info}
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-api">{lang_faq_api_title}</a>
+                </h4>
+                </div>
+                <div id="collapse-api" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        {lang_faq_api_login_info}
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-textcolor">{lang_text_color}</a>
+                </h4>
+                </div>
+                <div id="collapse-textcolor" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        {lang_text_color_info}
+                        <br />
+                    </div>
+                </div>
+            </div>
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h4 class="panel-title">
+                    <a class="accordion-toggle collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapse-nydusfix">{lang_nydus_fix}</a>
+                </h4>
+                </div>
+                <div id="collapse-nydusfix" class="panel-collapse collapse">
+                    <div class="panel-body">
+                        {lang_nydus_fix_info}
+                        <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+<!-- end .smart-forms section -->
+<!-- end .smart-wrap section -->
+<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+<!--[if lte IE 9]>
+        <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="./assets/js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+[CENTER]
+[B]##TITLE##[/B]
+##IF_TITLE2##
+##STATUS##
+
+[IMG]##COVER##[/IMG]
+
+[B]Laufzeit:[/B] ##LIFETIME##
+[B]Gr&ouml;&szlig;e:[/B] ~##SIZE##
+[B]Genre:[/B] ##GENRE##
+[B]Sprache Original:[/B] ##SPRACHE##
+[B]Video Stream:[/B] ##VSTREAM##
+[B]Audio Stream:[/B] ##ASTREAM##
+[B]Hashcode:[/B] ##HASHCODE##
+[B]Passwort:[/B] ##PASSWORD##
+
+##DESCRIPTION##
+
+[B]MEDIAINFO:[/B]
+[spoiler][code]
+##MEDIAINFO##
+[/code][/spoiler]
+
+[B]NFO:[/B]
+[spoiler][code]
+##NFO##
+[/code][/spoiler]
+
+[B]Download[/B]
+##STATUS##
+##DLINK##
+[spoiler]
+[hide]
+##DLINK##
+##CNLINK##
+[/hide]
+[/spoiler]
+
+Created by SSBG Beta *Standard*
+[/CENTER]

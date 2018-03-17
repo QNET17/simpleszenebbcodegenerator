@@ -1,0 +1,508 @@
+{header}
+<form method="post" action="{form_action}" enctype="multipart/form-data" id="generator">
+    <div class="form-body theme-{color_sheme}">
+        <!-- custom errors will load here  -->
+        <div class="notification alert-error errorsContainer">
+            <p>{lang_error_info}</p>
+            <ul id="smartErrors">
+            </ul>
+        </div>
+        <div class="spacer-b30">
+            <div class="tagline">
+                <span> <i class="fa fa-asterisk" aria-hidden="true"></i> {lang_template_variant} </span>
+            </div>
+            <!-- .tagline -->
+        </div>
+        <!-- end .spacer section -->
+        <div class="frm-row">
+            <div class="section colm colm6">
+                <div class="notification alert-info">
+                    <p>{lang_generator_variant_info}
+                    </p>
+                </div>
+                <!-- end .notification section -->
+            </div>
+            <!-- end .colm section -->
+            <div class="section colm colm6">
+                <label class="switch switch-round block switch-{color_sheme}">
+                    <input type="radio" name="template_variant" id="fr1" value="owntemplate_no" checked>
+                    <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span>
+                    <span> {lang_standard} </span>
+                </label>
+                <label class="switch switch-round block switch-{color_sheme}">
+                    <input type="radio" name="template_variant" id="fr2" value="owntemplate_yes" class="smartfm-ctrl" data-show-id="template_upload">
+                    <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span>
+                    <span> {lang_own} </span>
+                </label>
+            </div>
+            <!-- end .colm section -->
+        </div>
+        <!-- end .frm-row section -->
+        <!-- OWN TEMPLATE -->
+        <div id="template_upload" class="hiddenbox">
+            <div class="section">
+                <label class="field prepend-icon file">
+                    <span class="button btn-primary btn-{color_sheme}"> {lang_choose_template} </span>
+                    <input class="gui-file" name="upl_tpl" id="upl_tpl" onchange="document.getElementById('uploader1').value = this.value;" type="file">
+                    <input class="gui-input" id="uploader1" placeholder="{lang_no_choosed_template}" readonly="" type="text">
+                    <span class="field-icon"><i class="fa fa-upload"></i></span>
+                </label>
+            </div>
+            <!-- end  section -->
+        </div>
+        <!-- END: OWN TEMPLATE -->
+        <!-- START: TILTE -->
+        <div class="spacer-b30">
+            <div class="tagline">
+                <span><i class="fa fa-font" aria-hidden="true"></i> {lang_title}</span>
+            </div>
+        </div>
+        <!-- title -->
+        <div class="frm-row">
+            <div class="section colm colm6">
+                <label for="title" class="field prepend-icon">
+                    <input type="text" name="title" id="title" class="gui-input important_ph" placeholder="{lang_title}">
+                    <label for="title" class="field-icon">
+                        <i class="fa fa-font"></i>
+                    </label>
+                </label>
+                <a id="full_settings_show">
+                    <i class="fa fa-cog"></i> {lang_spezified_settings}
+                </a>
+            </div>
+            <!-- title2 -->
+            <div class="section colm colm6">
+                <label for="untertitel" class="field prepend-icon">
+                    <input type="text" name="untertitel" id="untertitel" class="gui-input" placeholder="{lang_subtitle}">
+                    <b class="tooltip tip-right-top"><em> {lang_subtitle_tip}</em></b>
+                    <label for="untertitel" class="field-icon">
+                        <i class="fa fa-font"></i>
+                    </label>
+                </label>
+            </div>
+        </div>
+        <!-- END: TITLE -->
+        <!-- Spez. Settings -->
+        <div id="full_settings_hide">
+            <div class="frm-row">
+                <div class="section colm colm6">
+                    <label class="field sfcolor">
+                        <input type="text" name="text1" value="" id="text1" class="gui-input" placeholder="{lang_text_color} #1">
+                    </label>
+                    <a id="resetinput" onclick="resetInput('text1'); resetInput('text2')"><i class="fa fa-eraser" aria-hidden="true"></i> {lang_reset_field}</a>
+                </div>
+                <!-- end section -->
+                <div class="section colm colm6">
+                    <label class="field sfcolor">
+                        <input type="text" name="text2" value="" id="text2" class="gui-input" placeholder="{lang_text_color} #2">
+                    </label>
+                    <a id="resetinput" onclick="resetInput('text1'); resetInput('text2')"> <i class="fa fa-eraser" aria-hidden="true"></i> {lang_reset_field}</a>
+                </div>
+                <!-- end section -->
+                <div class="section colm colm6">
+                    <label class="switch block switch-{color_sheme}">
+                        <input name="cnl" id="cnl" value="cnl" type="checkbox" {cookie_cnl}>
+                        <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span> {lang_use_cnl}
+                        </span>
+                    </label>
+                </div>
+                <!-- end .colm section -->
+                <div class="section colm colm6">
+                    <label class="switch block switch-{color_sheme}">
+                        <input name="containername" id="containername" value="containername" type="checkbox" {cookie_foldername}>
+                        <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span>
+                        <span> {lang_title_as_foldername}</span>
+                    </label>
+                </div>
+                <!-- NYDUS FIX -->
+                <div class="section colm colm6">
+                    <label class="switch block switch-{color_sheme}">
+                        <input name="nydus_fix" id="nydus_fix" value="nydus_fix" type="checkbox" {cookie_nydus_fix}>
+                        <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span>
+                        <span> {lang_nydus_fix} <a href="index.php?ssbg=faq#collapse-nydusfix"><i class="fa fa-question" aria-hidden="true"></i></a></span>
+                    </label>
+                </div>
+            </div>
+            <!-- end .frm-row section -->
+        </div>
+        <!-- END: SPEZ. SETTINGS -->
+        <!-- START: COVER UPLOAD, REMOTE -->
+        <div class="spacer-b30">
+            <div class="tagline">
+                <span><i class="fa fa-picture-o" aria-hidden="true"></i>  {lang_cover_image} </span>
+            </div>
+        </div>
+        <!-- remote -->
+        <div class="section">
+            <div class="smart-widget sm-left sml-120">
+                <label class="field">
+                    <input name="remotecover" id="remotecover" class="gui-input cover-group important_ph" placeholder="http://" type="url">
+                </label>
+                <label for="remotecover" class="button"> {lang_remote} </label>
+            </div>
+            <!-- end .smart-widget section -->
+        </div>
+        <!-- end section -->
+        <!-- upload -->
+        <div class="section">
+            <label class="field prepend-icon file">
+                <span class="button btn-primary btn-{color_sheme}"> {lang_choose_cover} </span>
+                <input class="gui-file" name="uploadcover" id="uploadcover" onchange="document.getElementById('uploader2').value = this.value;" type="file">
+                <input class="gui-input cover-group important_ph" id="uploader2" placeholder="{lang_no_cover_choosed}" readonly="" type="text">
+                <span class="field-icon"><i class="fa fa-upload"></i></span>
+            </label>
+            <a id="cover_settings_show">
+                <i class="fa fa-cog"></i> {lang_cover_settings}
+            </a>
+        </div>
+        <!-- Cover Settings -->
+        <div id="cover_settings_hide">
+            <div class="section">
+                <label for="covertextunder" class="field prepend-icon">
+                    <input type="text" name="covertextunder" id="covertextunder" class="gui-input cover" placeholder="{lang_watermark_text}">
+                    <b class="tooltip tip-left-top"><em> {lang_watermark_text_tip}</em></b>
+                    <label for="remotecover" class="field-icon">
+                        <i class="fa fa-tint" aria-hidden="true"></i>
+                    </label>
+                </label>
+            </div>
+            <div class="frm-row">
+                <div class="section colm colm4">
+                    <label class="switch switch-round block switch-{color_sheme}">
+                        <input name="watermark" id="wartermark_bottom" value="wartermark_bottom" type="radio">
+                        <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span>
+                        <span> <i class="fa fa-tint" aria-hidden="true"></i> {lang_bottom} </span>
+                    </label>
+                    <label class="switch switch-round block switch-{color_sheme}">
+                        <input name="watermark" id="wartermark_transparent_middle" value="wartermark_transparent_middle" type="radio">
+                        <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span>
+                        <span> <i class="fa fa-tint" aria-hidden="true"></i> {lang_center}  </span>
+                    </label>
+                    <label class="switch switch-round block switch-{color_sheme}">
+                        <input name="watermark" id="wartermark_reflect" value="wartermark_reflect" type="radio">
+                        <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span>
+                        <span> <i class="fa fa-tint" aria-hidden="true"></i> + {lang_reflektion} </span>
+                    </label>
+                </div>
+                <!-- end .colm section -->
+                <div class="section colm colm4">
+                    <label class="switch switch-round block switch-{color_sheme}">
+                        <input name="watermark" id="wartermark_greyscale" value="wartermark_greyscale" type="radio">
+                        <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span>
+                        <span> <i class="fa fa-adjust" aria-hidden="true"></i> {lang_greyscale} </span>
+                    </label>
+                    <label class="switch switch-round block switch-{color_sheme}">
+                        <input name="watermark" id="wartermark_frame" value="wartermark_frame" type="radio">
+                        <span class="switch-label" data-on="{lang_yes}" data-off="{lang_no}"></span>
+                        <span> <i class="fa fa-clone" aria-hidden="true"></i> {lang_frame} </span>
+                    </label>
+                </div>
+                <!-- end .colm section -->
+                <!-- imagehoster select -->
+                <div class="section colm colm4">
+                    <div class="option-group field">
+                        <label for="imgur" class="option block">
+                            <input name="imghost" id="imgur" value="imgur" type="radio" checked="">
+                            <span class="radio"></span> Imgur.com
+                        </label>
+                        <label for="imgdu" class="option block spacer-t10">
+                            <input name="imghost" id="imgdu" value="imgdu" type="radio">
+                            <span class="radio"></span> Directupload.net
+                        </label>
+                    </div>
+                    <!-- end .option-group section -->
+                </div>
+            </div>
+            <!-- end .frm-row section -->
+        </div>
+        <!-- END: Cover Settings -->
+        <!-- end  section -->
+        <!-- END: COVER UPLOAD, REMOTE -->
+        <!-- START: DETAILS -->
+        <div class="spacer-b30">
+            <div class="tagline">
+                <span><i class="fa fa-info" aria-hidden="true"></i> {lang_details}</span>
+            </div>
+        </div>
+        <div class="frm-row">
+            <!-- genre -->
+            <div class="section colm colm6">
+                <label for="genre" class="field prepend-icon">
+                    <input type="text" name="genre" id="genre" class="gui-input" placeholder="{lang_genre}">
+                    <b class="tooltip tip-left"><em> {lang_optional_info}</em></b>
+                    <label for="genre" class="field-icon">
+                        <i class="fa fa-sticky-note"></i>
+                    </label>
+                </label>
+            </div>
+            <!-- quality -->
+            <div class="section colm colm6">
+                <label for="quality" class="field prepend-icon">
+                    <input type="text" name="quality" id="quality" class="gui-input" placeholder="{lang_quality}" value="{cookie_quality}" onfocus="this.value=''" onblur="(this.value=='')? this.value='{cookie_quality}':this.value;">
+                    <label for="quality" class="field-icon">
+                        <i class="fa fa-music">
+                    </i>
+                    </label>
+                </label>
+            </div>
+            <!-- format -->
+            <div class="section colm colm6">
+                <label for="format" class="field prepend-icon">
+                    <input type="text" name="format" id="format" class="gui-input important_ph" placeholder="{lang_format}">
+                    <b class="tooltip tip-left"><em>{lang_format_tip}</em></b>
+                    <label for="format" class="field-icon">
+                        <i class="fa fa-music"></i>
+                    </label>
+                </label>
+            </div>
+            <!-- password -->
+            <div class="section colm colm6">
+                <label for="password" class="field prepend-icon">
+                    <input type="text" name="password" id="password" class="gui-input" placeholder="{lang_password}">
+                    <b class="tooltip tip-right"><em>{lang_password_tip}</em></b>
+                    <label for="password" class="field-icon">
+                        <i class="fa fa-key"></i>
+                    </label>
+                </label>
+            </div>
+            <!-- size -->
+            <div class="section colm colm6">
+                <label for="size" class="field prepend-icon">
+                    <input type="text" name="size" id="size" class="gui-input important_ph" placeholder="{lang_size}" value="">
+                    <label for="size" class="field-icon">
+                        <i class="fa fa-database"></i>
+                    </label>
+                </label>
+            </div>
+            <div class="section colm colm6">
+                <label class="field select state-error">
+                    <select id="units" name="units" aria-required="true" aria-describedby="language-error">
+                        <option value="">
+                            {lang_size_unit}
+                        </option>
+                        <option value="">----------------
+                        </option>
+                        {size_unit_select}
+                    </select>
+                    <i class="arrow double"></i>
+                </label>
+            </div>
+            <!-- archive -->
+            <div class="section colm colm6">
+                <label class="field select">
+                    <select id="archive" name="archive">
+                        <option value="">
+                            {lang_archive}
+                        </option>
+                        <option value="">----------------
+                        </option>
+                        {archive_select}
+                    </select>
+                    <i class="arrow double"></i>
+                </label>
+            </div>
+        </div>
+        <!-- END: DETAILS -->
+        <!-- START: INFORMATION -->
+        <div class="spacer-b30">
+            <div class="tagline">
+                <span> <i class="fa fa-info-circle" aria-hidden="true"></i> {lang_information}</span>
+            </div>
+        </div>
+        <!-- tracklist -->
+        <div class="section">
+            <label for="tracklist" class="field prepend-icon">
+                <textarea class="gui-textarea important_ph" id="tracklist" name="tracklist" placeholder="{lang_tracklist}"></textarea>
+                <label for="tracklist" class="field-icon">
+                    <i class="fa fa-info-circle"></i>
+                </label>
+                <span class="input-hint"> {lang_tracklist_tip}</span>
+            </label>
+        </div>
+        <!-- END: INFORMATION -->
+        <div class="spacer-t40 spacer-b30">
+            <div class="tagline"><span><i class="fa fa-code"></i> {lang_links_crypt} </span></div>
+            <!-- .tagline -->
+        </div>
+        <!-- end .spacer section -->
+        <div class="frm-row">
+            <div class="section colm colm4">
+                <label class="switch-crypter switch-round block switch-{color_sheme}">
+                    <input name="framework" id="fr1" value="fr1" type="radio" checked class="smartfm-ctrl" data-show-id="ochlinks_settings">
+                    <span class="switch-label" data-on="LINKS" data-off="LINKS"></span>
+                    <span> OCHLinks </span>
+                </label>
+                <label class="switch-crypter switch-round block switch-{color_sheme}">
+                    <p class="small-text fine-grey">{lang_crypt_info_faq} <a href="index.php?ssbg=faq">FAQ</a></p>
+                </label>
+            </div>
+            <div class="section colm colm4">
+                <label class="switch-crypter switch-round block switch-{color_sheme}">
+                    <input name="framework" id="fr2" value="fr2" type="radio" class="smartfm-ctrl" data-show-id="filecrypt_settings">
+                    <span class="switch-label" data-on="CRYPT" data-off="CRYPT"></span>
+                    <span> Filecrypt.cc </span>
+                </label>
+                <label class="switch-crypter switch-round block switch-{color_sheme}">
+                    <input name="framework" id="fr3" value="fr3" type="radio" class="smartfm-ctrl" data-show-id="sharelinks_settings">
+                    <span class="switch-label" data-on="CRYPT" data-off="CRYPT"></span>
+                    <span> Share-Links.biz  </span>
+                </label>
+            </div>
+            <!-- end .colm section -->
+            <div class="section colm colm4">
+                <label class="switch-crypter switch-round block switch-{color_sheme}">
+                    <input name="framework" id="fr4" value="mootols" type="radio" class="smartfm-ctrl" data-show-id="relink_settings">
+                    <span class="switch-label" data-on="CRYPT" data-off="CRYPT"></span>
+                    <span> Relink.us </span>
+                </label>
+                <label class="switch-crypter switch-round block switch-{color_sheme}">
+                    <input name="framework" id="fr5" value="angular" type="radio" class="smartfm-ctrl" data-show-id="ncrypt_settings">
+                    <span class="switch-label" data-on="CRYPT" data-off="CRYPT"></span>
+                    <span> nCrypt.in  </span>
+                </label>
+            </div>
+            <!-- end .colm section -->
+        </div>
+        <!-- end .frm-row section -->
+        <!-- OCHLinks Settings -->
+        <div id="ochlinks_settings" class="hiddenbox">
+            <div class="section">
+                <label for="ochlinks" class="field prepend-icon">
+                    <textarea class="gui-textarea important_ph" id="ochlinks" name="ochlinks" placeholder="OCHLinks"></textarea>
+                    <label for="ochlinks" class="field-icon">
+                        <i class="fa fa-link"></i>
+                    </label>
+                    <span class="input-hint"> {lang_ochlinks_tip}</span>
+                </label>
+            </div>
+        </div>
+        <!-- END: OCHLinks Settings -->
+        <!-- Filecrypt Settings -->
+        <div id="filecrypt_settings" class="hiddenbox">
+            <div class="section">
+                <div class="smart-widget sm-left sml-120">
+                    <label class="field">
+                        <input name="fc_api" id="fc_api" class="gui-input" placeholder="yhqxmt4apnyteux7yynx7f3dshgdrq3eyh3a2wbe" type="text" value="{cookie_fc_api}" onfocus="this.value=''" onblur="(this.value=='')? this.value='{cookie_fc_api}':this.value;">
+                    </label>
+                    <label for="fc_api" class="button"> API-KEY </label>
+                </div>
+                <!-- end .smart-widget section -->
+            </div>
+            <!-- end section -->
+        </div>
+        <!-- END: Filecrypt Settings -->
+        <!-- Share-Links Settings -->
+        <div id="sharelinks_settings" class="hiddenbox">
+            <div class="frm-row">
+                <div class="section colm colm6">
+                    <label for="sl_unsername" class="field prepend-icon">
+                        <input type="text" name="sl_username" id="sl_username" class="gui-input" placeholder="Username" value="{cookie_sl_username}" onfocus="this.value=''" onblur="(this.value=='')? this.value='{cookie_sl_username}':this.value;">
+                        <b class="tooltip tip-left"><em> {lang_sl_info_tip}</em></b>
+                        <label for="sl_username" class="field-icon">
+                            <i class="fa fa-archive"></i>
+                        </label>
+                    </label>
+                </div>
+                <div class="section colm colm6">
+                    <label for="sl_password" class="field prepend-icon">
+                        <input type="text" name="sl_password" id="sl_password" class="gui-input" placeholder="Passwort" value="{cookie_sl_password}" onfocus="this.value=''" onblur="(this.value=='')? this.value='{cookie_sl_password}':this.value;">
+                        <b class="tooltip tip-right"><em> {lang_sl_info_tip}</em></b>
+                        <label for="sl_password" class="field-icon">
+                            <i class="fa fa-archive"></i>
+                        </label>
+                    </label>
+                </div>
+            </div>
+            <div class="section">
+                <div class="smart-widget sm-left sml-120">
+                    <label class="field">
+                        <input name="sl_api" id="sl_api" class="gui-input" placeholder="upcgh8up96xxpb5d" type="text" value="{cookie_sl_api}" onfocus="this.value=''" onblur="(this.value=='')? this.value='{cookie_sl_api}':this.value;">
+                    </label>
+                    <label for="sl_api" class="button"> API-KEY </label>
+                </div>
+                <!-- end .smart-widget section -->
+            </div>
+        </div>
+        <!-- END: Share-Links Settings -->
+        <!-- Relink.us Settings -->
+        <div id="relink_settings" class="hiddenbox">
+            <div class="section">
+                <div class="smart-widget sm-left sml-120">
+                    <label class="field">
+                        <input name="rl_api" id="rl_api" class="gui-input" placeholder="c3sm6gkvsw9sza92njb685c5ej39czkfs3tpa59t" type="text" value="{cookie_rl_api}" onfocus="this.value=''" onblur="(this.value=='')? this.value='{cookie_rl_api}':this.value;">
+                    </label>
+                    <label for="rl_api" class="button"> API-KEY </label>
+                </div>
+                <!-- end .smart-widget section -->
+            </div>
+        </div>
+        <!-- END: Relink.us Settings -->
+        <!-- nCrypt.in Settings -->
+        <div id="ncrypt_settings" class="hiddenbox">
+            <div class="section">
+                <div class="smart-widget sm-left sml-120">
+                    <label class="field">
+                        <input name="nc_api" id="nc_api" class="gui-input" placeholder="JJCHZwSumpbcFSbd7SwGymJqChXDWxGx" type="text" value="{cookie_nc_api}" onfocus="this.value=''" onblur="(this.value=='')? this.value='{cookie_nc_api}':this.value;">
+                    </label>
+                    <label for="nc_api" class="button"> API-KEY </label>
+                </div>
+                <!-- end .smart-widget section -->
+            </div>
+        </div>
+        <!-- END: nCrypt.in Settings -->
+        <!-- end .form-body section -->
+        <div class="form-footer" align="center">
+            <div class="frm-row">
+                <div class="section colm colm9">
+                    <label class="field">
+                        <a href="https://www.scriptzbase.org/" target="_blank"><img src="https://www.scriptzbase.org/images/xuslink/sb_468060_animiert1.gif" border="0" width="468" height="60" alt="ScriptzBase.org | Germany's No.1 for Nulled Scripts" title="ScriptzBase.org | Germany's No.1 for Nulled Scripts" /></a>
+                    </label>
+                </div>
+                <!-- end section -->
+                <div class="section colm colm3">
+                    <label class="field">
+                        <a href="https://www.scriptzbase.org/"><img src="https://www.scriptzbase.org/images/xuslink/sb_88031_1.png" border="0" width="88" height="31" alt="ScriptzBase.org | Germany's No.1 for Nulled Scripts" title="ScriptzBase.org | Germany's No.1 for Nulled Scripts" /></a>
+                        <br />
+                        <a href="https://www.scriptzbase.org/"><img src="https://www.scriptzbase.org/images/xuslink/sb_88031_1.png" border="0" width="88" height="31" alt="ScriptzBase.org | Germany's No.1 for Nulled Scripts" title="ScriptzBase.org | Germany's No.1 for Nulled Scripts" /></a>
+                    </label>
+                </div>
+                <!-- end section -->
+            </div>
+            <!-- end .frm-row section -->
+        </div>
+        <!-- custom errors will load here  -->
+        <div class="section spacer-b40">
+            <div class="notification alert-error errorsContainer">
+                <p>{lang_error_info}</p>
+                <ul id="smartErrors">
+                </ul>
+            </div>
+        </div>
+        <!-- end .form-footer section -->
+        <div class="section">
+            <button type="submit" class="button pushed btn-primary btn-{color_sheme}"> {lang_generate}</button>
+        </div>
+        <!-- RulesPlant -->
+        <div class="modal fade" id="rulesplant" role="dialog">
+            <div class="modal-dialog modal-sm">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">{lang_the_rulesplant}</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>{lang_rulesplant_info}</p>
+                        <p><img src="https://www.google.com/s2/favicons?domain=http://myboerse.bz" alt=""> Myboerse.bz: <a href="https://gist.github.com/Uranjitsu/0339ba89db6c9b92c85d5f6b9dd43f39" target="_blank">{lang_rules}</a></p>
+                        <p><img src="https://www.google.com/s2/favicons?domain=https://boerse.to" alt=""> Boese.to: <a href="https://gist.github.com/Uranjitsu/0bd6323b6e27077e2d787240e100eff3" target="_blank">{lang_rules}</a></p>
+                        <p><img src="https://www.google.com/s2/favicons?domain=http://mygully.com" alt=""> Mygully.com: <a href="https://gist.github.com/Uranjitsu/48a0672c70fe2345b9020f9079edd45a" target="_blank">{lang_rules}</a></p>
+                        <p><img src="https://www.google.com/s2/favicons?domain=http://www.boerse.sx" alt=""> Boerse.sx: <a href="https://gist.github.com/Uranjitsu/ade446aaf481182b10862780c2fff83e" target="_blank">{lang_rules}</a></p>
+                        <p><img src="https://www.google.com/s2/favicons?domain=http://nydus.org/" alt=""> Nydus.org: <a href="https://gist.github.com/Uranjitsu/693ee7a240f606d5c3aab0bf397d9c49" target="_blank">{lang_rules}</a></p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">{lang_close}</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+{donate_modal}
+        {footer}

@@ -1,0 +1,100 @@
+</div>
+</form>
+<!-- end .smart-forms section -->
+</div>
+</div>
+<!-- end .smart-wrap section -->
+<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.steps.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-ui-custom.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-ui-slider-pips.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery-ui-touch-punch.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.formShowHide.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.spectrum.min.js"></script>
+<script type="text/javascript" src="./assets/js/clipboard.min.js"></script>
+<script type="text/javascript" src="./assets/js/jquery.validate.min.js"></script>
+<script type="text/javascript" src="./assets/js/additional-methods.min.js"></script>
+<!--[if lt IE 10]>
+            <script src="./assets/js/jquery.placeholder.min.js"></script>
+        <![endif]-->
+<!--[if lte IE 9]>
+            <link rel="stylesheet" href="./assets/css/sky-mega-menu-ie8.css">
+            <script type="text/javascript" src="./assets/js/jquery.placeholder.min.js"></script>
+            <script src="./assets/js/html5shiv.js"></script>
+        <![endif]-->
+<script type="text/javascript">
+    $( document ).ready(function() {
+        $('[data-toggle="tooltip"]').tooltip({'placement': 'top'});
+    });
+$(function() {
+
+        /* Show hide / FORMS
+        ------------------------------------------------------- */
+        $('.smartfm-ctrl').formShowHide();
+
+        /* Show hide / COVER SETTINGD
+        ------------------------------------------------------- */
+        $("#cover_settings_hide").hide();
+        $("#cover_settings_show").click(function() {
+            $("#cover_settings_hide").toggle();
+        });
+
+        /* Show hide / COVER SETTINGD
+        ------------------------------------------------------- */
+        $("#full_settings_hide").hide();
+        $("#full_settings_show").click(function() {
+            $("#full_settings_hide").toggle();
+        });
+
+        /* COPY TO CLIBOARD
+        ------------------------------------------------------- */
+        var clipboard = new Clipboard('.btn');
+
+        clipboard.on('success', function(e) {
+            console.log(e);
+        });
+
+        clipboard.on('error', function(e) {
+            console.log(e);
+        });
+
+        /* Type paste - pickers
+        ------------------------------------------------- */
+        $("#text1, #text2").spectrum({
+            preferredFormat: "hex6",
+            showButtons: false,
+            clickoutFiresChange: true
+        });
+
+        $("#text1, #text2").blur(function() {
+            $(this).spectrum("set", $(this).val());
+        });
+
+        /* Bind event handlers for focus and mouseup
+        --------------------------------------------------------------- */
+        $('#text1, #text2').focus(function() {
+            $(this).select();
+        });
+        $('#text1, #text2').mouseup(function(e) {
+            e.preventDefault();
+        });
+
+        /* Show all inputs with a colorpicker || hidden by default
+        --------------------------------------------------------------- */
+        $("#text1, #text2").show();
+
+    }
+
+);
+/* FIELD RESET
+--------------------------------------------------------------- */
+function resetInput(id) {
+    document.getElementById(id).value = "";
+}
+</script>
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="./assets/js/pop.js"></script>
+{validation}
+</body>
+
+</html>

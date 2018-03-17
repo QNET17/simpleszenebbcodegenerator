@@ -1,0 +1,347 @@
+/* @labels font-size styling :: adjust to fit your needs
+--------------------------------------------------------- */
+
+.smart-forms .switch-crypter {
+    font-size: 14px;
+}
+
+
+/* @prevent user selection for usability purposes
+----------------------------------------------------- */
+
+.smart-forms .switch-crypter > label {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+/* @toggle switch elements
+-------------------------------------------------- */
+
+.smart-forms .switch-crypter {
+    cursor: pointer;
+    position: relative;
+    padding-right: 10px;
+    display: inline-block;
+    margin-bottom: 5px;
+    height: 26px;
+}
+
+.smart-forms .switch-crypter > .switch-label {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    width: 68px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    background: #D7D7D7;
+    border: 2px solid #D7D7D7;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+
+.smart-forms .switch > .switch-label .watermark {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    height: 25px;
+    width: 70px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    line-height: 20px;
+    text-align: center;
+    background: #D7D7D7;
+    border: 2px solid #D7D7D7;
+    text-transform: uppercase;
+    font-family: Helvetica, Arial, sans-serif;
+    -webkit-transition: 0.3s ease-out;
+    -moz-transition: 0.3s ease-out;
+    -o-transition: 0.3s ease-out;
+    transition: 0.3s ease-out;
+}
+
+.smart-forms .switch-crypter > .switch-label + span {
+    display: inline-block;
+    padding-left: 5px;
+    position: relative;
+    top: -7px;
+}
+
+.smart-forms .switch-crypter > .switch-label:before {
+    content: attr(data-off);
+    position: absolute;
+    top: 1px;
+    right: 3px;
+    width: 43px;
+}
+
+.smart-forms .switch-crypter > .switch-label:after {
+    content: "";
+    margin: 1px;
+    width: 19px;
+    height: 19px;
+    display: block;
+    background: #fff;
+}
+
+.smart-forms .switch-crypter > input {
+    -webkit-appearance: none;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+
+
+/* @toggle switch focus state
+-------------------------------------------------------------- */
+
+.smart-forms .switch-crypter > input:focus {
+    outline: none;
+}
+
+.smart-forms .switch-crypter > input:focus + .switch-label {
+    color: #fff;
+    border-color: #C7C7C7;
+    background: #C7C7C7;
+}
+
+.smart-forms .switch-crypter > input:focus + .switch-label:after {
+    background: #fff;
+}
+
+
+/* @toggle switch normal state
+--------------------------------------------------------------- */
+
+.smart-forms .switch-crypter > input:checked + .switch-label {
+    border-color: #4ebd4a;
+    background: #4ebd4a;
+    padding-left: 43px;
+    color: white;
+}
+
+.smart-forms .switch-crypter > input:checked + .switch-label:before {
+    content: attr(data-on);
+    left: 1px;
+    top: 1px;
+}
+
+.smart-forms .switch-crypter > input:checked + .switch-label:after {
+    margin: 1px;
+    width: 19px;
+    height: 19px;
+    background: white;
+}
+
+
+/* @toggle switch normal state focus
+--------------------------------------------------------------------------------- */
+
+.smart-forms .switch-crypter > input:checked:focus + .switch-label {
+    background: #3c9b39;
+    border-color: #3c9b39;
+}
+
+
+/* @smart widget buttons - to right
+------------------------------------------------- */
+
+.smart-forms .smr-30,
+.smart-forms .append-picker-icon {
+    padding-right: 30px;
+}
+
+.smart-forms .smr-30 .button,
+.smart-forms .append-picker-icon button {
+    width: 30px;
+}
+
+.smart-forms .smr-40,
+.smart-forms .append-picker-icon {
+    padding-right: 40px;
+}
+
+.smart-forms .smr-40 .button,
+.smart-forms .append-picker-icon button {
+    width: 40px;
+}
+
+
+/* SHOW / HIDE
+------------------------------------------------- */
+
+#cover_settings_show {
+    font-size: 11px;
+    color: #4CAF50;
+    cursor: pointer;
+    padding: 1px 0 0 6px;
+}
+
+#full_settings_show {
+    font-size: 11px;
+    color: #862424;
+    cursor: pointer;
+    padding: 1px 0 0 6px;
+}
+
+#resetinput {
+    font-size: 11px;
+    cursor: pointer;
+    padding: 1px 0 0 6px;
+}
+
+.borderradius4 {
+    -webkit-border-radius: 4px !important;
+    -moz-border-radius: 4px !important;
+    border-radius: 4px !important;
+}
+
+
+/* HEADER EXTRAS
+------------------------------------------------- */
+
+#language_icons {
+    position: absolute;
+    z-index: 1;
+    left: 610px;
+    top: -1px;
+    width: 47px;
+}
+
+#donate_button {
+    position: absolute;
+    z-index: 1;
+    left: 580px;
+    top: 28px;
+}
+
+#rules_button {
+    position: absolute;
+    z-index: 1;
+    left: 535px;
+    top: 53px;
+}
+
+#twitter_button {
+    position: absolute;
+    z-index: 1;
+    left: 515px;
+    top: 28px;
+}
+
+.min_info {
+    margin: 0 0 5px 0 !important;
+    text-align: right;
+}
+
+.badgebadgeinfo {
+    position: relative;
+}
+
+.badgebadgeinfo[data-badgebadgeinfo]:after {
+    content: attr(data-badgebadgeinfo);
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 8px;
+    font-weight: bold;
+    background-color: #DC2225;
+    color: #F8F5F5;
+    width: 20px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.badgebadgeinfobeta[data-badgebadgeinfo]:after {
+    content: attr(data-badgebadgeinfo);
+    position: absolute;
+    top: 4px;
+    right: 4px;
+    font-size: 8px;
+    font-weight: bold;
+    background-color: #AA44DD !important;
+    color: #F8F5F5;
+    width: 25px;
+    height: 15px;
+    text-align: center;
+    line-height: 15px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+.btn-mini .label,
+.btn-mini .badge {
+    top: 0;
+}
+
+.btn-mini [class^="icon-"],
+.btn-mini [class*=" icon-"] {
+    margin-top: -1px;
+}
+
+.btn-mini {
+    padding: 0 6px;
+    font-size: 10.5px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+button.btn.btn-mini,
+input[type="submit"].btn.btn-mini {
+    *padding-top: 1px;
+    *padding-bottom: 1px;
+}
+
+.btn-group>.btn-mini {
+    font-size: 10.5px;
+}
+
+.btn-group>.btn-mini+.dropdown-toggle {
+    padding-left: 5px;
+    padding-right: 5px;
+    *padding-top: 2px;
+    *padding-bottom: 2px;
+}
+
+.btn-mini .caret,
+.btn-small .caret {
+    margin-top: 8px;
+}
+
+.important_ph::-webkit-input-placeholder {
+    color: #C36A69 !important;
+}
+
+.important_ph::-moz-placeholder {
+    color: #C36A69 !important;
+}
+
+.important_ph::-ms-placeholder {
+    color: #C36A69 !important;
+}
+
+.important_ph::placeholder {
+    color: #C36A69 !important;
+}

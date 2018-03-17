@@ -1,0 +1,403 @@
+{header}
+<form method="post" action="/" id="quote">
+    <div class="form-body theme-{color_sheme}">
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            Parameter für alle Generatoren
+        </div>
+        <div><button type="button" class="btn btn-primary btn-xs">POST</button> {api_domain}api.php</div>
+        <table class="table table-striped custab">
+            <thead>
+                <tr>
+                    <th>Feld</th>
+                    <th>Art</th>
+                    <th>Zwingend</th>
+                    <th>Beschreibung</th>
+                </tr>
+            </thead>
+            <tr>
+                <td>type</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-danger btn-xs">ZWINGEND</a></td>
+                <td>Ausgabenformat:
+                    <br />Möglich: <a href="#" class="btn btn-warning btn-xs">plain</a> <a href="#" class="btn btn-warning btn-xs">bbcode</a> <a href="#" class="btn btn-warning btn-xs">json</a> <a href="#" class="btn btn-warning btn-xs">xml</a> <a href="#" class="btn btn-warning btn-xs">array</a></td>
+            </tr>
+            <tr>
+                <td>action</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-danger btn-xs">ZWINGEND</a></td>
+                <td>Generator ansprechen:
+                    <br />Möglich: <a href="#" class="btn btn-warning btn-xs">games</a> <a href="#" class="btn btn-warning btn-xs">music</a> <a href="#" class="btn btn-warning btn-xs">porn</a> <a href="#" class="btn btn-warning btn-xs">movie</a> <a href="#" class="btn btn-warning btn-xs">moviexrel</a> <a href="#" class="btn btn-warning btn-xs">simple</a> <a href="#" class="btn btn-warning btn-xs">software</a></td>
+            </tr>
+            <tr>
+                <td>cnl</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td>CNL2 anbieten?
+                    <br />Möglich: <a href="#" class="btn btn-warning btn-xs">YES</a> <a href="#" class="btn btn-warning btn-xs">NO</a></td>
+            </tr>
+            <tr>
+                <td>containername</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td>Titel als Containername?
+                    <br />Wenn gewünscht, wird der Titel als Containername verwendet. Ansonsten wird ein zufälliger Hash verwendet.
+                    <br />Möglich: <a href="#" class="btn btn-warning btn-xs">YES</a> <a href="#" class="btn btn-warning btn-xs">NO</a></td>
+            </tr>
+            <tr>
+                <td>text1
+                    <br />text2</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td>Textfarbe #1 + #2
+                    <br />Du kannst deinen Code mit einer Textfarbe schmücken. Alle Informationen dazu, findest du in der <a href="index.php?ssbg=faq" target="_blank">FAQ</a>. Möglich ist nur die Angabe eines Hex-Codes.
+                    <br />Beispiel: <a href="https://www.w3schools.com/cssref/css_colors.asp" target="_blank">#000000</a></td>
+            </tr>
+            <tr>
+                <td>sl_api
+                    <br />sl_name
+                    <br />sl_pw</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td><a href="http://share-links.biz/api" target="_blank">Share-Links.biz API-Key</a> und Login.Daten
+                    <br />Wenn kein API-Key angegeben wurde, wird der Dienst ignoriert. Um den Status abzufangen, sind Username (sl_name) und Passwort (sl_pw) zwingend erforderlich.</td>
+            </tr>
+            <tr>
+                <td>fc_api</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td><a href="http://filecrypt.cc/Settings.html" target="_blank">Filecrypt.cc API-Key</a>
+                    <br />Wenn kein API-Key angegeben wurde, wird der Dienst ignoriert.</td>
+            </tr>
+            <tr>
+                <td>nc_api</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td><a href="http://ncrypt.in/api.html" target="_blank">nCrypt.in API-Key</a>
+                    <br />Wenn kein API-Key angegeben wurde, wird der Dienst ignoriert.</td>
+            </tr>
+            <tr>
+                <td>rl_api</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td><a href="http://relink.to/apidoc.php" target="_blank">Relink.us API-Key</a>
+                    <br />Wenn kein API-Key angegeben wurde, wird der Dienst ignoriert.</td>
+            </tr>
+            <tr>
+                <td>remotecover</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td>Remotecover
+                    <br />Cover von einer externen Bildquelle angeben.
+                    <br />Beispiel: http://image-url.tld</td>
+            </tr>
+            <tr>
+                <td>watermark_text</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td>Wasserzeichen Text
+                    <br />Gebe hier einen beliebigen Text für das Wasserzeichen an.</td>
+            </tr>
+            <tr>
+                <td>watermark_variant</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td>Wasserzeichen Variante
+                    <br />Wähle hier die gewünschte Variante:
+                    <br /><a href="#" class="btn btn-warning btn-xs">wartermark_bottom</a> Text unten
+                    <br /><a href="#" class="btn btn-warning btn-xs">wartermark_transparent_middle</a> Text Mitte
+                    <br /><a href="#" class="btn btn-warning btn-xs">wartermark_reflect</a> Cover Reflektion
+                    <br /><a href="#" class="btn btn-warning btn-xs">wartermark_frame</a> Cover Umrandung
+                    <br /><a href="#" class="btn btn-warning btn-xs">wartermark_greyscale</a> Cover Grauton</td>
+            </tr>
+            <tr>
+                <td>template_variant</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-success btn-xs">OPTIONAL</a></td>
+                <td>Zuerst muss <strong>template_variant</strong> bestimmt werden. Dafür stehen die Parameter: <a href="#" class="btn btn-warning btn-xs">standard</a> Standard-Template
+                    <br /><a href="#" class="btn btn-warning btn-xs">code</a> Dein vollen Template Code unter <a href="#" class="btn btn-secondary btn-xs">$template</a> direkt übergeben.
+                    <br /><a href="#" class="btn btn-warning btn-xs">remote</a> Eine externe Quelle (Url als <strong>RAW</strong>) wie z.B Pastebin oder GitHubGist unter <a href="#" class="btn btn-secondary btn-xs">$template</a> nutzen.</td>
+            </tr>
+            <tr>
+                <td>ochlinks</td>
+                <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                <td><a href="#" class="btn btn-danger btn-xs">ZWINGEND</a></td>
+                <td>Hoster-Links
+                    <br />Müssen durch ein Semikolon getrennt werden!
+                    <br />Beispiel: http://url.tld;http://url.tld</td>
+            </tr>
+        </table>
+        <div class="alert alert-warning alert-dismissible" role="alert">
+            Spezifizierte Parameter
+        </div>
+        <!-- Nav tabs category -->
+        <ul class="nav nav-tabs faq-cat-tabs">
+            <li class="active"><a href="#spez-games" data-toggle="tab"><i class="fa fa-gamepad"></i> Games</a></li>
+            <li><a href="#" data-toggle="tab"><i class="glyphicon glyphicon-plus"></i>x</a></li>
+            <li><a href="#" data-toggle="tab"><i class="glyphicon glyphicon-delete"></i>x</a></li>
+            <li><a href="#" data-toggle="tab"><i class="glyphicon glyphicon-leaf"></i>x</a></li>
+            <li><a href="#" data-toggle="tab"><i class="glyphicon glyphicon-user"></i>x</a></li>
+            <li><a href="#" data-toggle="tab"><i class="glyphicon glyphicon-user"></i>x</a></li>
+        </ul>
+        <!-- Tab panes -->
+        <div class="tab-content faq-cat-content">
+            <div class="tab-pane active in fade" id="spez-games">
+                <table class="table table-striped custab">
+                    <thead>
+                        <tr>
+                            <th>Feld</th>
+                            <th>Art</th>
+                            <th>Zwingend</th>
+                            <th>Beschreibung</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>title</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-danger btn-xs' href="#">ZWINGEND</a></td>
+                        <td>Release Titel</td>
+                    </tr>
+                    <tr>
+                        <td>subtitle</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-success btn-xs' href="#">OPTIONAL</a></td>
+                        <td>Einen Untertitel für weitere Kurz-Infos</td>
+                    </tr>
+                    <tr>
+                        <td>password</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-success btn-xs' href="#">OPTIONAL</a></td>
+                        <td>Das Passwort, falls erforderlich.</td>
+                    </tr>
+                    <tr>
+                        <td>archive</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-success btn-xs' href="#">OPTIONAL</a></td>
+                        <td>Das Archiv-Format: RAR5, RAR, ZIP, ...</td>
+                    </tr>
+                    <tr>
+                        <td>zinfo</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-success btn-xs' href="#">OPTIONAL</a></td>
+                        <td>Zusätzliche Informationen</td>
+                    </tr>
+                    <tr>
+                        <td>update</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-success btn-xs' href="#">OPTIONAL</a></td>
+                        <td>Hier können Infos zu beigepackten Updates hinterlassen werden.
+                            <br />Empfohlen sind Versionsnummern.</td>
+                    </tr>
+                    <tr>
+                        <td>size
+                            <br />units</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-danger btn-xs' href="#">ZWINGEND</a></td>
+                        <td>Die Größenangabe
+                            <br /><a href="#" class="btn btn-secondary btn-xs">size</a> Größe
+                            <br /><a href="#" class="btn btn-secondary btn-xs">units</a> Einheit</td>
+                    </tr>
+                    <tr>
+                        <td>crack</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-success btn-xs' href="#">OPTIONAL</a></td>
+                        <td>Name der Cracker-Group</td>
+                    </tr>
+                    <tr>
+                        <td>genre</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-success btn-xs' href="#">OPTIONAL</a></td>
+                        <td>Das passende Genre</td>
+                    </tr>
+                    <tr>
+                        <td>description</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-danger btn-xs' href="#">ZWINGEND</a></td>
+                        <td>Die Beschreibung</td>
+                    </tr>
+                    <tr>
+                        <td>nfo</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-danger btn-xs' href="#">ZWINGEND</a></td>
+                        <td>Die NFO. Wird gestripped.</td>
+                    </tr>
+                    <tr>
+                        <td>language</td>
+                        <td><a class='btn btn-info btn-xs' href="#">string</a></td>
+                        <td><a class='btn btn-success btn-xs' href="#">OPTIONAL</a></td>
+                        <td>Die Sprache von dem Release. DE, EN, Deutsch, English, ...</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="tab-pane fade" id="faq-cat-2">
+                <div class="panel-group" id="accordion-cat-2">
+                    <div class="panel panel-default panel-faq">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-1">
+                                <h4 class="panel-title">
+                                        Nested item 1
+                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                    </h4>
+                            </a>
+                        </div>
+                        <div id="faq-cat-2-sub-1" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel panel-default panel-faq">
+                        <div class="panel-heading">
+                            <a data-toggle="collapse" data-parent="#accordion-cat-2" href="#faq-cat-2-sub-2">
+                                <h4 class="panel-title">
+                                       Nested item  #2
+                                        <span class="pull-right"><i class="glyphicon glyphicon-plus"></i></span>
+                                    </h4>
+                            </a>
+                        </div>
+                        <div id="faq-cat-2-sub-2" class="panel-collapse collapse">
+                            <div class="panel-body">
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="row form-group">
+                                    <div class="col-sm-2">Fever</div>
+                                    <div class=" col-sm-3 btn-group" data-toggle="buttons">
+                                        <label class="btn btn-primary btn-sm  active">
+                                            <input type="checkbox" autocomplete="off" checked>Yes
+                                        </label>
+                                        <label class="btn btn-primary btn-sm">
+                                            <input type="checkbox" autocomplete="off">No
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</form>
+{donate_modal}
+<!-- end .smart-forms section -->
+</div>
+</div>
+<!-- end .smart-wrap section -->
+<script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+<!--[if lte IE 9]>
+        <script type="text/javascript" src="./assets/js/jquery-3.2.1.min.js"></script>
+        <script type="text/javascript" src="./assets/js/jquery.placeholder.min.js"></script>
+    <![endif]-->
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+    $('.collapse').on('show.bs.collapse', function() {
+        var id = $(this).attr('id');
+        $('a[href="#' + id + '"]').closest('.panel-heading').addClass('active-faq');
+        $('a[href="#' + id + '"] .panel-title span').html('<i class="glyphicon glyphicon-minus"></i>');
+    });
+    $('.collapse').on('hide.bs.collapse', function() {
+        var id = $(this).attr('id');
+        $('a[href="#' + id + '"]').closest('.panel-heading').removeClass('active-faq');
+        $('a[href="#' + id + '"] .panel-title span').html('<i class="glyphicon glyphicon-plus"></i>');
+    });
+});
+</script>
+</body>
+
+</html>

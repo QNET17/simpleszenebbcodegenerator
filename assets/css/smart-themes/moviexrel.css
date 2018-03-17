@@ -1,0 +1,153 @@
+/* Background
+------------------------------------ */
+.bg {
+background: #0B486B;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #F56217, #0B486B);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #F56217, #0B486B); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* @form header themes
+------------------------------------ */
+.smart-forms .header-moviexrel {
+	background-color:#F56217;
+	border-top:1px solid #0B486B;
+	border-bottom:5px solid #0B486B;
+}
+
+.smart-forms .header-lite{ border-top-color:#0B486B; }
+.smart-forms .header-lite:before{ background-color:#0B486B; }
+.smart-forms .header-moviexrel h4{ color:#fff; }
+
+/* @form tagline
+-------------------------------------- */
+.smart-forms .theme-moviexrel .tagline span{ color:#F56217; }
+.smart-forms .theme-moviexrel .smart-link{ color:#F56217; }
+
+/* @hover | focus
+---------------------------------------- */
+.smart-forms .theme-moviexrel .gui-input:hover,
+.smart-forms .theme-moviexrel .gui-textarea:hover,
+.smart-forms .theme-moviexrel .select > select:hover,
+.smart-forms .theme-moviexrel .select-multiple select:hover,
+.smart-forms .theme-moviexrel .gui-input:hover ~ .input-hint,
+.smart-forms .theme-moviexrel .file .gui-file:hover + .gui-input,
+.smart-forms .theme-moviexrel .gui-textarea:hover ~ .input-hint{ border-color: #0B486B; }
+
+.smart-forms .theme-moviexrel .gui-input:focus,
+.smart-forms .theme-moviexrel .gui-textarea:focus,
+.smart-forms .theme-moviexrel .select > select:focus,
+.smart-forms .theme-moviexrel .select-multiple select:focus{
+	border-color: #F56217;
+	-webkit-box-shadow:0px 0px 3px #F56217 inset;
+	-moz-box-shadow:0px 0px 3px #F56217 inset;
+	-o-box-shadow:0px 0px 3px #F56217 inset;
+	box-shadow:0px 0px 3px #F56217 inset;
+	color: #3C3C3C;
+}
+
+.smart-forms .theme-moviexrel .gui-textarea:focus{  height: 120px; }
+.smart-forms .theme-moviexrel .select > select:focus { z-index:10; z-index:20\9; }
+.smart-forms .theme-moviexrel .gui-input:focus ~ .field-icon i,
+.smart-forms .theme-moviexrel .gui-textarea:focus ~ .field-icon i{ color:#F56217; }
+.smart-forms .theme-moviexrel .select-multiple select:focus,
+.smart-forms .theme-moviexrel .gui-input:focus ~ .input-hint,
+.smart-forms .theme-moviexrel .gui-textarea:focus ~ .input-hint,
+.smart-forms .theme-moviexrel .file .gui-file:focus + .gui-input{ border-color: #F56217; }
+.smart-forms .theme-moviexrel .select > select:focus + .arrow{ color:#F56217; }
+
+/* @star rating
+------------------------------------------------- */
+.smart-forms .theme-moviexrel .rating:hover .rating-star:hover,
+.smart-forms .theme-moviexrel .rating:hover .rating-star:hover ~ .rating-star,
+.smart-forms .theme-moviexrel .rating-input:checked ~ .rating-star { color: #F56217;	}
+.smart-forms .theme-moviexrel .rating-star,
+.smart-forms .theme-moviexrel .rating:hover .rating-star {	color: #A2A6A8;	 }
+
+
+/* @checkbox + radio moviexrel
+--------------------------------------------------- */
+.smart-forms .option-moviexrel input:hover + .checkbox,
+.smart-forms .option-moviexrel input:hover + .radio{ border-color: #0B486B; }
+.smart-forms .option-moviexrel input:checked + .checkbox,
+.smart-forms .option-moviexrel input:focus + .checkbox,
+.smart-forms .option-moviexrel input:checked + .radio,
+.smart-forms .option-moviexrel input:focus + .radio{ border-color: #F56217; }
+.smart-forms .option-moviexrel input:checked + .radio:before,
+.smart-forms .option-moviexrel input:focus + .radio:before{  background: #F56217; }
+.smart-forms .option-moviexrel input:checked + .checkbox:before,
+.smart-forms .option-moviexrel input:focus + .checkbox:before{ border-color: #F56217; }
+
+/* @toggle-switch moviexrel
+--------------------------------------------- */
+.smart-forms .switch-moviexrel > input:checked + .switch-label { background: #F56217; border-color: #F56217; }
+.smart-forms .switch-moviexrel > input:checked + .switch-label:after { color:#F56217; }
+.smart-forms .switch-moviexrel > input:checked:focus + .switch-label { background: #0B486B; border-color: #0B486B; }
+
+/* @button moviexrel
+----------------------------------------------- */
+.smart-forms .btn-moviexrel { background-color: #F56217; }
+.smart-forms .btn-moviexrel:hover,
+.smart-forms .btn-moviexrel:focus{ background-color: #0B486B; }
+.smart-forms .btn-moviexrel:active{ background-color: #0B486B; }
+.smart-forms .btn-moviexrel,
+.smart-forms .btn-moviexrel:hover,
+.smart-forms .btn-moviexrel:focus,
+.smart-forms .btn-moviexrel:active{ color: #fff; text-shadow: 0 1px rgba(0, 0, 0, 0.08);  }
+
+/* @datepicker overides
+-------------------------------------------------- */
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-title { color:#F56217; }
+.ui-datepicker-today a,
+.ui-datepicker-today a:hover,
+.ui-datepicker .ui-state-highlight { background:#F56217!important; }
+
+/*  @price-box
+------------------------------------------------------ */
+.smart-forms .theme-moviexrel .selected-box h4{ color:#F56217; }
+.smart-forms .ribbon-inner{ background: #F56217; }
+.smart-forms .ribbon-inner:before,
+.smart-forms .ribbon-inner:after{ border-top-color:#F56217; }
+
+/*  NAVIGATION COLOR
+------------------------------------------------------ */
+.sky-mega-menu li:hover > a,
+.sky-mega-menu li.current > a {
+	background: #F56217;
+	color: #fff;
+}
+
+.sky-mega-menu form .input:hover input,
+.sky-mega-menu form .textarea:hover textarea {
+	border-color: #0B486B;
+}
+.sky-mega-menu form .button {
+	background-color: #F56217;
+}
+.sky-mega-menu form .input input:focus,
+.sky-mega-menu form .textarea textarea:focus {
+	border-color: #F56217;
+}
+
+/*ICON HEADER */
+.head-icon {
+ color:#F56217 !important;
+ text-shadow: 0 1px 0 #0B486B,
+ 0 1px 0 #c9c9c9,
+ 0 2px 0 #bbb,
+ 0 3px 0 #b9b9b9,
+ 0 4px 0 #aaa,
+ 0 5px 1px rgba(0,0,0,.1),
+ 0 0 4px rgba(0,0,0,.1),
+ 0 1px 2px rgba(0,0,0,.3),
+ 0 2px 3px rgba(0,0,0,.2),
+ 0 4px 9px rgba(0,0,0,.25),
+ 0 9px 9px rgba(0,0,0,.2),
+ 0 10px 10px rgba(0,0,0,.15);
+}
+
+.notification {
+	border: #F56217 1px dashed !important;
+}

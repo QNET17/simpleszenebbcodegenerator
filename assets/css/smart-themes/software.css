@@ -1,0 +1,152 @@
+/* Background 
+------------------------------------ */
+.bg {
+background: #1e130c;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9a8478, #1e130c);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9a8478, #1e130c); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+/* @form header themes 
+------------------------------------ */
+.smart-forms .header-software {	
+	background-color:#1e130c;
+	border-top:1px solid #9a8478;  
+	border-bottom:5px solid #9a8478;
+}
+
+.smart-forms .header-lite{ border-top-color:#9a8478; }
+.smart-forms .header-lite:before{ background-color:#1e130c; }
+.smart-forms .header-software h4{ color:#fff; }
+
+/* @form tagline 
+-------------------------------------- */
+.smart-forms .theme-software .tagline span{ color:#1e130c; }
+.smart-forms .theme-software .smart-link{ color:#1e130c; }
+
+/* @hover | focus  
+---------------------------------------- */
+.smart-forms .theme-software .gui-input:hover,
+.smart-forms .theme-software .gui-textarea:hover,
+.smart-forms .theme-software .select > select:hover,
+.smart-forms .theme-software .select-multiple select:hover, 
+.smart-forms .theme-software .gui-input:hover ~ .input-hint,
+.smart-forms .theme-software .file .gui-file:hover + .gui-input,
+.smart-forms .theme-software .gui-textarea:hover ~ .input-hint{ border-color: #9a8478; }
+
+.smart-forms .theme-software .gui-input:focus,
+.smart-forms .theme-software .gui-textarea:focus,
+.smart-forms .theme-software .select > select:focus,
+.smart-forms .theme-software .select-multiple select:focus{ 
+	border-color: #1e130c;
+	-webkit-box-shadow:0px 0px 3px #1e130c inset; 
+	-moz-box-shadow:0px 0px 3px #1e130c inset; 
+	-o-box-shadow:0px 0px 3px #1e130c inset; 	
+	box-shadow:0px 0px 3px #1e130c inset; 
+	color: #3C3C3C; 
+}
+
+.smart-forms .theme-software .gui-textarea:focus{  height: 120px; }
+.smart-forms .theme-software .select > select:focus { z-index:10; z-index:20\9; }
+.smart-forms .theme-software .gui-input:focus ~ .field-icon i,
+.smart-forms .theme-software .gui-textarea:focus ~ .field-icon i{ color:#1e130c; }
+.smart-forms .theme-software .select-multiple select:focus, 
+.smart-forms .theme-software .gui-input:focus ~ .input-hint,
+.smart-forms .theme-software .gui-textarea:focus ~ .input-hint, 
+.smart-forms .theme-software .file .gui-file:focus + .gui-input{ border-color: #1e130c; }
+.smart-forms .theme-software .select > select:focus + .arrow{ color:#1e130c; }
+
+/* @star rating 
+------------------------------------------------- */
+.smart-forms .theme-software .rating:hover .rating-star:hover,
+.smart-forms .theme-software .rating:hover .rating-star:hover ~ .rating-star,
+.smart-forms .theme-software .rating-input:checked ~ .rating-star { color: #1e130c;	}
+.smart-forms .theme-software .rating-star, 
+.smart-forms .theme-software .rating:hover .rating-star {	color: #A2A6A8;	 }
+
+
+/* @checkbox + radio software 
+--------------------------------------------------- */
+.smart-forms .option-software input:hover + .checkbox,  
+.smart-forms .option-software input:hover + .radio{ border-color: #9a8478; }
+.smart-forms .option-software input:checked + .checkbox, 
+.smart-forms .option-software input:focus + .checkbox, 
+.smart-forms .option-software input:checked + .radio, 
+.smart-forms .option-software input:focus + .radio{ border-color: #1e130c; }
+.smart-forms .option-software input:checked + .radio:before, 
+.smart-forms .option-software input:focus + .radio:before{  background: #1e130c; }
+.smart-forms .option-software input:checked + .checkbox:before, 
+.smart-forms .option-software input:focus + .checkbox:before{ border-color: #1e130c; }
+
+/* @toggle-switch software 
+--------------------------------------------- */
+.smart-forms .switch-software > input:checked + .switch-label { background: #1e130c; border-color: #1e130c; }
+.smart-forms .switch-software > input:checked + .switch-label:after { color:#1e130c; }
+.smart-forms .switch-software > input:checked:focus + .switch-label { background: #9a8478; border-color: #9a8478; }
+
+/* @button software 
+----------------------------------------------- */
+.smart-forms .btn-software { background-color: #1e130c; }
+.smart-forms .btn-software:hover,
+.smart-forms .btn-software:focus{ background-color: #9a8478; }
+.smart-forms .btn-software:active{ background-color: #9a8478; }
+.smart-forms .btn-software, 
+.smart-forms .btn-software:hover,
+.smart-forms .btn-software:focus, 
+.smart-forms .btn-software:active{ color: #fff; text-shadow: 0 1px rgba(0, 0, 0, 0.08);  }
+
+/* @datepicker overides 
+-------------------------------------------------- */
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-title { color:#1e130c; }
+.ui-datepicker-today a, 
+.ui-datepicker-today a:hover, 
+.ui-datepicker .ui-state-highlight { background:#1e130c!important; }
+
+/*  @price-box 
+------------------------------------------------------ */
+.smart-forms .theme-software .selected-box h4{ color:#1e130c; }
+.smart-forms .ribbon-inner{ background: #1e130c; }
+.smart-forms .ribbon-inner:before,
+.smart-forms .ribbon-inner:after{ border-top-color:#9a8478; }
+
+/*  NAVIGATION COLOR
+------------------------------------------------------ */
+.sky-mega-menu li:hover > a,
+.sky-mega-menu li.current > a {
+	background: #1e130c;
+	color: #fff;
+}
+
+.sky-mega-menu form .input:hover input,
+.sky-mega-menu form .textarea:hover textarea {
+	border-color: #9a8478;
+}
+.sky-mega-menu form .button {
+	background-color: #1e130c;	
+}
+.sky-mega-menu form .input input:focus,
+.sky-mega-menu form .textarea textarea:focus {
+	border-color: #1e130c;
+}
+
+/*ICON HEADER */
+.head-icon {
+ color:#1e130c !important;
+ text-shadow: 0 1px 0 #9a8478,
+ 0 1px 0 #c9c9c9,
+ 0 2px 0 #bbb,
+ 0 3px 0 #b9b9b9,
+ 0 4px 0 #aaa,
+ 0 5px 1px rgba(0,0,0,.1),
+ 0 0 4px rgba(0,0,0,.1),
+ 0 1px 2px rgba(0,0,0,.3),
+ 0 2px 3px rgba(0,0,0,.2),
+ 0 4px 9px rgba(0,0,0,.25),
+ 0 9px 9px rgba(0,0,0,.2),
+ 0 10px 10px rgba(0,0,0,.15);
+}
+
+.notification {
+	border: #1e130c 1px dashed !important;
+}

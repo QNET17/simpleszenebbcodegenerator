@@ -1,0 +1,16 @@
+                    <div class="section">
+                      <div class="min_info">
+                        <a href="{github_gist_link}" target="_blank" class="btn btn-default btn-mini"><i class="fa fa-github" aria-hidden="true"></i> {lang_gist_link}</a>
+                        </div>
+                        <label class="field prepend-icon">
+                            <textarea class="gui-textarea" id="ssbg{count}" name="ssbg{count}" onclick="this.focus();this.select()" readonly>{output}</textarea>
+                             <span class="field-icon">
+                              <span class="fa-stack fa-3x">
+                               <i class="fa fa-circle-o fa-stack-3x"></i>
+                                <strong class="fa-stack-1x" style="font-size: 8px; color: #E74C3C;">{count}</strong>
+                               </span>
+                             </span>
+                            <span class="input-hint"> <strong>Crypter:</strong> {crypter_name}</span>   
+                            <button type="button" class="button pushed btn btn-primary btn-{color_sheme}" data-clipboard-target="#ssbg{count}">{lang_copy_code}</button>
+                        </label>
+                    </div><!-- end section -->

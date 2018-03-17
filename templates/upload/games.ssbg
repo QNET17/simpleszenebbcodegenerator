@@ -1,0 +1,31 @@
+﻿[CENTER]
+[B]##TITLE##[/B]
+##IF_TITLE2##
+##IF_UPDATE##
+##STATUS##
+
+[IMG]##COVER##[/IMG]
+
+##COLOR1##[B]Genre:[/B]##COLOR## ##COLOR2####IF_GENRE####COLOR## [B]|[/B] ##COLOR1##[B]Crack:[/B]##COLOR## ##COLOR2####IF_CRACK####COLOR##
+##COLOR1##[B]Sprache:[/B]##COLOR## ##COLOR2####SPRACHE####COLOR## [B]|[/B] ##COLOR1##[B]Update:[/B]##COLOR## ##COLOR2####UPDATE_MINI####COLOR##
+##COLOR1##[B]Format:[/B]##COLOR## ##COLOR2####ARCHIVE####COLOR## [B]|[/B] ##COLOR1##[B]Größe:[/B]##COLOR## ##COLOR2##~##SIZE####COLOR##
+##COLOR1##[B]Hashcode:[/B]##COLOR## ##COLOR2####HASHCODE####COLOR## [B]|[/B] ##COLOR1##[B]Passwort:[/B]##COLOR## ##COLOR2####PASSWORD####COLOR##
+
+##IF_DESCRIPTION##
+
+[B]NFO:[/B]
+[spoiler][code]
+##NFO##
+[/code][/spoiler]
+
+##IF_Z_INFO##
+
+[B]Download[/B]
+##STATUS##
+[spoiler]
+##DLINK##
+##CNLINK##
+[/spoiler]
+
+Created by SSBG Beta *GAMES*
+[/CENTER]

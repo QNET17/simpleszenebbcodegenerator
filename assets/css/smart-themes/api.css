@@ -1,0 +1,132 @@
+/* Background
+------------------------------------ */
+.bg {
+background: #616161;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #9bc5c3, #616161);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #9bc5c3, #616161); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+/* @form header themes
+------------------------------------ */
+.smart-forms .header-api {
+	background-color:#9bc5c3;
+	border-top:1px solid #9bc5c3;
+	border-bottom:5px solid #616161;
+}
+
+.smart-forms .header-lite{ border-top-color:#9bc5c3; }
+.smart-forms .header-lite:before{ background-color:#738c8a; }
+.smart-forms .header-api h4{ color:#fff; }
+
+/* @form tagline
+-------------------------------------- */
+.smart-forms .theme-api .tagline span{ color:#9bc5c3; }
+.smart-forms .theme-api .smart-link{ color:#9bc5c3; }
+
+/* @hover | focus
+---------------------------------------- */
+.smart-forms .theme-api .gui-input:hover,
+.smart-forms .theme-api .gui-textarea:hover,
+.smart-forms .theme-api .select > select:hover,
+.smart-forms .theme-api .select-multiple select:hover,
+.smart-forms .theme-api .gui-input:hover ~ .input-hint,
+.smart-forms .theme-api .file .gui-file:hover + .gui-input,
+.smart-forms .theme-api .gui-textarea:hover ~ .input-hint{ border-color: #616161; }
+
+.smart-forms .theme-api .gui-input:focus,
+.smart-forms .theme-api .gui-textarea:focus,
+.smart-forms .theme-api .select > select:focus,
+.smart-forms .theme-api .select-multiple select:focus{
+	border-color: #9bc5c3;
+	-webkit-box-shadow:0px 0px 3px #9bc5c3 inset;
+	-moz-box-shadow:0px 0px 3px #9bc5c3 inset;
+	-o-box-shadow:0px 0px 3px #9bc5c3 inset;
+	box-shadow:0px 0px 3px #9bc5c3 inset;
+	color: #3C3C3C;
+}
+
+.smart-forms .theme-api .gui-textarea:focus{  height: 120px; }
+.smart-forms .theme-api .select > select:focus { z-index:10; z-index:20\9; }
+.smart-forms .theme-api .gui-input:focus ~ .field-icon i,
+.smart-forms .theme-api .gui-textarea:focus ~ .field-icon i{ color:#9bc5c3; }
+.smart-forms .theme-api .select-multiple select:focus,
+.smart-forms .theme-api .gui-input:focus ~ .input-hint,
+.smart-forms .theme-api .gui-textarea:focus ~ .input-hint,
+.smart-forms .theme-api .file .gui-file:focus + .gui-input{ border-color: #9bc5c3; }
+.smart-forms .theme-api .select > select:focus + .arrow{ color:#9bc5c3; }
+
+/* @star rating
+------------------------------------------------- */
+.smart-forms .theme-api .rating:hover .rating-star:hover,
+.smart-forms .theme-api .rating:hover .rating-star:hover ~ .rating-star,
+.smart-forms .theme-api .rating-input:checked ~ .rating-star { color: #9bc5c3;	}
+.smart-forms .theme-api .rating-star,
+.smart-forms .theme-api .rating:hover .rating-star {	color: #A2A6A8;	 }
+
+
+/* @checkbox + radio api
+--------------------------------------------------- */
+.smart-forms .option-api input:hover + .checkbox,
+.smart-forms .option-api input:hover + .radio{ border-color: #616161; }
+.smart-forms .option-api input:checked + .checkbox,
+.smart-forms .option-api input:focus + .checkbox,
+.smart-forms .option-api input:checked + .radio,
+.smart-forms .option-api input:focus + .radio{ border-color: #9bc5c3; }
+.smart-forms .option-api input:checked + .radio:before,
+.smart-forms .option-api input:focus + .radio:before{  background: #9bc5c3; }
+.smart-forms .option-api input:checked + .checkbox:before,
+.smart-forms .option-api input:focus + .checkbox:before{ border-color: #9bc5c3; }
+
+/* @toggle-switch api
+--------------------------------------------- */
+.smart-forms .switch-api > input:checked + .switch-label { background: #9bc5c3; border-color: #9bc5c3; }
+.smart-forms .switch-api > input:checked + .switch-label:after { color:#9bc5c3; }
+.smart-forms .switch-api > input:checked:focus + .switch-label { background: #616161; border-color: #616161; }
+
+/* @button api
+----------------------------------------------- */
+.smart-forms .btn-api { background-color: #9bc5c3; }
+.smart-forms .btn-api:hover,
+.smart-forms .btn-api:focus{ background-color: #616161; }
+.smart-forms .btn-api:active{ background-color: #616161; }
+.smart-forms .btn-api,
+.smart-forms .btn-api:hover,
+.smart-forms .btn-api:focus,
+.smart-forms .btn-api:active{ color: #fff; text-shadow: 0 1px rgba(0, 0, 0, 0.08);  }
+
+/* @datepicker overides
+-------------------------------------------------- */
+.ui-datepicker .ui-datepicker-prev,
+.ui-datepicker .ui-datepicker-next,
+.ui-datepicker .ui-datepicker-title { color:#9bc5c3; }
+.ui-datepicker-today a,
+.ui-datepicker-today a:hover,
+.ui-datepicker .ui-state-highlight { background:#9bc5c3!important; }
+
+/*  @price-box
+------------------------------------------------------ */
+.smart-forms .theme-api .selected-box h4{ color:#9bc5c3; }
+.smart-forms .ribbon-inner{ background: #9bc5c3; }
+.smart-forms .ribbon-inner:before,
+.smart-forms .ribbon-inner:after{ border-top-color:#616161; }
+
+/*  NAVIGATION COLOR
+------------------------------------------------------ */
+.sky-mega-menu li:hover > a,
+.sky-mega-menu li.current > a {
+	background: #9bc5c3;
+	color: #fff;
+}
+
+.sky-mega-menu form .input:hover input,
+.sky-mega-menu form .textarea:hover textarea {
+	border-color: #616161;
+}
+.sky-mega-menu form .button {
+	background-color: #9bc5c3;
+}
+.sky-mega-menu form .input input:focus,
+.sky-mega-menu form .textarea textarea:focus {
+	border-color: #9bc5c3;
+}

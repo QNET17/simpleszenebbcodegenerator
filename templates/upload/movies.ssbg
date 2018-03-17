@@ -1,0 +1,39 @@
+[CENTER]
+[B]##TITLE##[/B]
+##IF_TITLE2##
+##STATUS##
+
+[IMG]##COVER##[/IMG]
+
+##COLOR1##[B]Laufzeit:[/B]##COLOR## ##COLOR2####LIFETIME####COLOR##
+##COLOR1##[B]Größe:[/B]##COLOR## ##COLOR2##~##SIZE####COLOR##
+##COLOR1##[B]Genre:[/B]##COLOR## ##COLOR2####GENRE####COLOR##
+##COLOR1##[B]Sprache:[/B]##COLOR## ##COLOR2####SPRACHE####COLOR##
+##COLOR1##[B]Video Stream:[/B]##COLOR## ##COLOR2####VSTREAM####COLOR##
+##COLOR1##[B]Audio Stream:[/B]##COLOR## ##COLOR2####ASTREAM####COLOR##
+##COLOR1##[B]Video Codec:[/B]##COLOR## ##COLOR2####VCODEC####COLOR##
+##COLOR1##[B]Hashcode:[/B]##COLOR## ##COLOR2####HASHCODE####COLOR##
+##COLOR1##[B]Passwort:[/B]##COLOR## ##COLOR2####PASSWORD####COLOR##
+
+##DESCRIPTION##
+
+[B]MEDIAINFO:[/B]
+[spoiler][code]
+##MEDIAINFO##
+[/code][/spoiler]
+
+[B]NFO:[/B]
+[spoiler][code]
+##NFO##
+[/code][/spoiler]
+
+[B]Download[/B]
+##STATUS##
+##DLINK##
+[spoiler]
+##DLINK##
+##CNLINK##
+[/spoiler]
+
+Created by SSBG Beta *MOVIE*
+[/CENTER]

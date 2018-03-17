@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- COMMON TAGS -->
+    <meta charset="utf-8">
+    <title>{website_title}</title>
+    <!-- Search Engine -->
+    <meta name="description" content="Ein innovativer BBcode-Generator für verschiedene Bereiche der Szene">
+    <meta name="image" content="####LOGO######">
+    <!-- Schema.org for Google -->
+    <meta itemprop="name" content="{website_title}">
+    <meta itemprop="description" content="Ein innovativer BBcode-Generator für verschiedene Bereiche der Szene">
+    <meta itemprop="image" content="####LOGO######">
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="{website_title}">
+    <meta name="twitter:description" content="Ein innovativer BBcode-Generator für verschiedene Bereiche der Szene">
+    <meta name="twitter:site" content="@uranjitsu">
+    <meta name="twitter:creator" content="@uranjitsu">
+    <meta name="twitter:image:src" content="1024px x 512px">
+    <!-- Open Graph general (Facebook, Pinterest & Google+) -->
+    <meta name="og:title" content="{website_title}">
+    <meta name="og:description" content="Ein innovativer BBcode-Generator für verschiedene Bereiche der Szene">
+    <meta name="og:image" content="600x315pxLOGO">
+    <meta name="og:url" content="http://uranjtsu.xyz/">
+    <meta name="og:site_name" content="{website_title}">
+    <meta name="og:locale" content="de_DE">
+    <meta name="og:type" content="website">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/sky-mega-menu.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/smart-forms.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/smart-addons.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/smart-themes/{color_sheme}.css">
+    <!--[if lte IE 8]>
+            <link type="text/css" rel="stylesheet" href="./assets/css/smart-forms-ie8.css">
+        <![endif]-->
+    <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/xtra.css">
+    {head_include}
+</head>
+
+<body class="bg">
+    {navigation}
+    <div class="smart-wrap">
+        <div class="smart-forms smart-container smart-flat {wrapper}">
+            <div class="form-header header-lite">
+                <h4 class="head-icon" data-target-resolver><i class="fa {head_icon} head-icon" aria-hidden="true"></i>{lang_generator_name}</h4>
+                <div id="twitter_button">
+                    <a href="index.php?ssbg=outtwitter" class="btn btn-info btn-xs"><i class="fa fa-twitter" aria-hidden="true"></i> {lang_follow}</a>
+                </div>
+                <div id="language_icons">
+                    <img src="./assets/img/de.png" width="16" height="11" alt="" />
+                    <img src="./assets/img/us.png" width="16" height="11" alt="" />
+                </div>
+                <div id="donate_button"><a href="#" class="btn btn-warning btn-xs" data-toggle="modal" data-target="#donate-modal"><i class="fa fa-usd" aria-hidden="true"></i> {lang_donate}</a>
+                </div>
+                {rules_button}
+            </div>
+            <!-- end .form-header section -->

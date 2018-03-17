@@ -1,0 +1,25 @@
+[CENTER]
+[B]##TITLE##[/B]
+##IF_TITLE2##
+##STATUS##
+
+[IMG]##COVER##[/IMG]
+
+##COLOR1##[B]Sprache:[/B]##COLOR## ##COLOR2####SPRACHE####COLOR## [B]|[/B] ##COLOR1##[B]Version:[/B]##COLOR## ##COLOR1####VERSION####COLOR## [B]|[/B] ##COLOR1##[B]Build:[/B]##COLOR## ##COLOR2####BUILD####COLOR##
+##COLOR1##[B]Format:[/B]##COLOR## ##COLOR2####ARCHIVE####COLOR## [B]|[/B] ##COLOR1##[B]Größe:[/B]##COLOR## ##COLOR1##~##SIZE####COLOR##
+##COLOR1##[B]Hashcode:[/B]##COLOR## ##COLOR2####HASHCODE####COLOR## [B]|[/B] ##COLOR1##[B]Passwort:[/B]##COLOR## ##COLOR1####PASSWORD####COLOR##
+
+##DESCRIPTION##
+
+##IF_Z_INFO##
+
+[B]Download[/B]
+##STATUS##
+##DLINK##
+[spoiler]
+##DLINK##
+##CNLINK##
+[/spoiler]
+
+Created by SSBG Beta *SOFTWARE*
+[/CENTER]
