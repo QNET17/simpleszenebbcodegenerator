@@ -40,8 +40,8 @@ include_once 'lang/' . $lang_file;
 
 $GLOBALS['domain']     = 'http://ssbg.esy.es/';
 
-$imgur_api    = 'xxxxxxxxxxx';
-$pastebin_api = 'xxxxxxxxxxxxx';
+$imgur_api    = 'xxxxxxxxxxxxxx';
+$pastebin_api = 'xxxxxxxxxxxxxx';
 $tmdb_api     = 'xxxxxxxxxxxxxx';
 
 
