@@ -3,7 +3,9 @@ Ein innovativer BBcode-Generator für verschiedene Bereiche der Szene: Musik, So
 
 Credits:
 SzeneBox.org | Für den Support-Bereich
+
 FLX @ SZB    | Für die wunderbare Hilfe
+
 
 DEMO:
 http://ssbg.esy.es
